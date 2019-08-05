@@ -72,16 +72,6 @@
 
 #![recursion_limit="128"]
 #![cfg_attr(not(feature = "std"), no_std)]
-#![cfg_attr(all(feature = "bench", test), feature(test))]
-
-#[cfg(all(feature = "bench", test))]
-extern crate test;
-
-#[cfg(any(feature = "bench", test))]
-mod mock;
-
-#[cfg(test)]
-mod tests;
 
 use support::{decl_event, decl_module, decl_storage, ensure, StorageMap, Parameter, 
             dispatch::{Result, Vec},
