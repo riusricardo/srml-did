@@ -7,7 +7,7 @@ version = '1.0.0'
 [features]
 default = ["std"]
 std = [
-	"parity-codec/std",
+	"codec/std",
 	"rstd/std",
 	"runtime-io/std",
 	"support/std",
@@ -24,24 +24,25 @@ no_std = []
 default_features = false
 git = 'https://github.com/paritytech/substrate.git'
 package = 'srml-balances'
-rev = '311279449ee9d17b0cd8b2cb876326eebd3001e4'
+rev = '3198388248bbcbad019a5810a36523bc60b0e47f'
 
-[dependencies.parity-codec]
+[dependencies.codec]
 default-features = false
+package = 'parity-scale-codec'
 features = ['derive']
-version = '4.1.1'
+version = '1.0.0'
 
 [dependencies.primitives]
 default_features = false
 git = 'https://github.com/paritytech/substrate.git'
 package = 'substrate-primitives'
-rev = '311279449ee9d17b0cd8b2cb876326eebd3001e4'
+rev = '3198388248bbcbad019a5810a36523bc60b0e47f'
 
 [dependencies.rstd]
 default_features = false
 git = 'https://github.com/paritytech/substrate.git'
 package = 'sr-std'
-rev = '311279449ee9d17b0cd8b2cb876326eebd3001e4'
+rev = '3198388248bbcbad019a5810a36523bc60b0e47f'
 
 [dependencies.runtime-io]
 default_features = false
@@ -53,7 +54,7 @@ rev = 'dfcc0850ab581a4804921904f8015bacf2e63ea7'
 default_features = false
 git = 'https://github.com/paritytech/substrate.git'
 package = 'sr-primitives'
-rev = '311279449ee9d17b0cd8b2cb876326eebd3001e4'
+rev = '3198388248bbcbad019a5810a36523bc60b0e47f'
 
 [dependencies.serde]
 optional = true
@@ -64,16 +65,16 @@ version = '1.0'
 default_features = false
 git = 'https://github.com/paritytech/substrate.git'
 package = 'srml-support'
-rev = '311279449ee9d17b0cd8b2cb876326eebd3001e4'
+rev = '3198388248bbcbad019a5810a36523bc60b0e47f'
 
 [dependencies.system]
 default_features = false
 git = 'https://github.com/paritytech/substrate.git'
 package = 'srml-system'
-rev = '311279449ee9d17b0cd8b2cb876326eebd3001e4'
+rev = '3198388248bbcbad019a5810a36523bc60b0e47f'
 
 [dependencies.timestamp]
 default_features = false
 git = 'https://github.com/paritytech/substrate.git'
 package = 'srml-timestamp'
-rev = '311279449ee9d17b0cd8b2cb876326eebd3001e4'
+rev = '3198388248bbcbad019a5810a36523bc60b0e47f'

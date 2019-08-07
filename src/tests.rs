@@ -6,7 +6,7 @@
 
 use crate::mock::{DID, System, Moment, Origin, AttributeTransaction, 
                   new_test_ext, account_pair, account_key};
-use parity_codec::Encode;
+use codec::Encode;
 use support::{assert_ok, assert_noop};
 use runtime_io::with_externalities;
 use primitives::Pair;

@@ -78,10 +78,12 @@ use support::{decl_event, decl_module, decl_storage, ensure, StorageMap, Paramet
             traits::{Currency, ExistenceRequirement, WithdrawReason}
 };
 use sr_primitives::{traits::{Hash, Verify}};
-use parity_codec::{Encode, Decode};
+use codec::{Encode, Decode};
 use system::{self, ensure_signed};
 use rstd::{prelude::*};
 
+mod mock;
+mod tests;
 
 /// Attributes or properties that make up an identity.
 #[derive(PartialEq, Eq, PartialOrd, Ord, Clone, Encode, Decode, Default)]

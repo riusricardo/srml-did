@@ -4,7 +4,7 @@
 // You may obtain a copy of the License at http://www.apache.org/licenses/LICENSE-2.0
 #![cfg(test)]
 
-use crate::{did, AccountId};
+use crate::{AccountId, Module, Trait};
 use support::impl_outer_origin;
 use runtime_io::TestExternalities;
 use sr-primitives::{
@@ -47,7 +47,7 @@ impl timestamp::Trait for Test {
     type OnTimestampSet = ();
 }
 
-impl did::Trait for Test {
+impl Trait for Test {
     type Event = ();
     type Signature = sr25519::Signature;
 }
@@ -87,7 +87,7 @@ pub fn account_pair(s: &str) -> sr25519::Pair {
     .expect("static values are valid; qed")
 }
 
-pub type DID = did::Module<Test>;
+pub type DID = Module<Test>;
 pub type System = system::Module<Test>;
 pub type Moment = timestamp::Module<Test>;
-pub type AttributeTransaction<Signature,AccountId> = did::AttributeTransaction<Signature,AccountId>;
+pub type AttributeTransaction<Signature,AccountId> = AttributeTransaction<Signature,AccountId>;
