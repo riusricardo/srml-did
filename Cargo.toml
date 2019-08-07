@@ -2,7 +2,7 @@
 authors = ['Ricardo Rius <ricardo@rius.info>']
 edition = '2018'
 name = 'srml-did'
-version = '1.0.0'
+version = '1.0.1'
 
 [features]
 default = ["std"]
@@ -48,7 +48,7 @@ rev = '3198388248bbcbad019a5810a36523bc60b0e47f'
 default_features = false
 git = 'https://github.com/paritytech/substrate.git'
 package = 'sr-io'
-rev = 'dfcc0850ab581a4804921904f8015bacf2e63ea7'
+rev = '3198388248bbcbad019a5810a36523bc60b0e47f'
 
 [dependencies.sr-primitives]
 default_features = false
