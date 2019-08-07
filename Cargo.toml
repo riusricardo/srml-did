@@ -9,6 +9,7 @@ default = ["std"]
 std = [
 	"parity-codec/std",
 	"rstd/std",
+	"runtime-io/std",
 	"support/std",
 	"balances/std",
 	"primitives/std",
@@ -41,6 +42,12 @@ default_features = false
 git = 'https://github.com/paritytech/substrate.git'
 package = 'sr-std'
 rev = '311279449ee9d17b0cd8b2cb876326eebd3001e4'
+
+[dependencies.runtime-io]
+default_features = false
+git = 'https://github.com/paritytech/substrate.git'
+package = 'sr-io'
+rev = 'dfcc0850ab581a4804921904f8015bacf2e63ea7'
 
 [dependencies.sr-primitives]
 default_features = false
