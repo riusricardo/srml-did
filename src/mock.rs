@@ -7,7 +7,7 @@
 use crate::{AccountId, Module, Trait};
 use support::impl_outer_origin;
 use runtime_io::TestExternalities;
-use sr-primitives::{
+use sr_primitives::{
     BuildStorage,
     traits::{BlakeTwo256, IdentityLookup},
     testing::{Header}
