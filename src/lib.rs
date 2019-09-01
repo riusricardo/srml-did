@@ -70,7 +70,7 @@
 //!
 //! *
 
-#![recursion_limit="128"]
+#![recursion_limit="256"]
 #![cfg_attr(not(feature = "std"), no_std)]
 
 use support::{decl_event, decl_module, decl_storage, ensure, StorageMap, Parameter, 
@@ -133,7 +133,7 @@ decl_storage! {
 decl_module! {
     pub struct Module<T: Trait> for enum Call where origin: T::Origin {
 
-        fn deposit_event<T>() = default;
+        fn deposit_event() = default;
 
         /// Transfers ownership of an identity.
         pub fn change_owner(origin, identity: T::AccountId, new_owner: T::AccountId) -> Result {
